@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+# Estructura del Proyecto SpellIt
+
+Este es un proyecto React Native con Expo usando file-based routing con expo-router.
+
+## Estructura Principal
+
+- **app/**: Directorio de rutas usando expo-router
+  - **\_layout.tsx**: Layout raíz con Stack navigator
+  - **(tabs)/**: Rutas con navegación por tabs
+- **components/**: Componentes reutilizables
+  - **ui/**: Componentes de interfaz base
+- **hooks/**: Custom hooks de React
+- **constants/**: Constantes y temas
+
+## Stack Tecnológico
+
+- React Native 0.81.4 con React 19
+- Expo ~54
+- expo-router para navegación basada en archivos
+- NativeWind para estilos (Tailwind CSS)
+- GluestackUI para componentes de UI
+- TypeScript con modo strict
+
+## Imports Path Alias
+
+Usar `@/` como alias para importar desde la raíz del proyecto:
+
+```typescript
+import { theme } from "@/constants/theme";
+```
+
+## Navegación
+
+- Archivos en `app/` se convierten automáticamente en rutas
+- Usar `<Stack>`, `<Tabs>` de expo-router
+- Los layouts controlan la estructura de navegación

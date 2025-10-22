@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1761023975710,
+      "tag": "0000_previous_thunderball",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1761062328149,
+      "tag": "0001_red_pyro",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1761062400000,
+      "tag": "0002_settings_json",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1761094859000,
+      "tag": "0003_glossy_wendell_rand",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1761094863276,
+      "tag": "0004_strong_starbolt",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1761104522564,
+      "tag": "0005_flimsy_madame_masque",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1761104728852,
+      "tag": "0006_low_shooting_star",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1761105535247,
+      "tag": "0007_melted_angel",
+      "breakpoints": true
+    }
+  ]
+}

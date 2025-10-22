@@ -1,0 +1,24 @@
+---
+globs: *.ts,*.tsx
+---
+
+# Estilo TypeScript
+
+## Preferencias de Usuario
+
+- **Comentarios mínimos**: Usar solo cuando sea absolutamente necesario
+- **Código limpio**: El código debe ser autoexplicativo
+- **Respuestas cortas**: Sin resúmenes extensos
+
+## Configuración TypeScript
+
+- Modo strict activado
+- Usar tipos explícitos cuando mejore la legibilidad
+- Evitar `any`, preferir `unknown` si es necesario
+
+## Convenciones
+
+- Usar interfaces para props de componentes
+- Nombres descriptivos para variables y funciones
+- Export default para componentes de páginas
+- Named exports para utilities y hooks

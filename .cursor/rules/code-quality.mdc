@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+
+# Calidad de Código
+
+## ESLint
+
+- Configuración Expo con React Compiler
+- Ejecutar `npm run lint` para verificar
+- No ignorar warnings de ESLint
+
+## TypeScript
+
+- Modo strict habilitado
+- No usar `any` sin justificación
+- Tipos explícitos para funciones exportadas
+
+## Código Limpio
+
+- Componentes pequeños y reutilizables
+- Custom hooks para lógica compartida
+- Nombres descriptivos en inglés
+- Comentarios mínimos, código autoexplicativo

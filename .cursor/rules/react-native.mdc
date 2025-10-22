@@ -1,0 +1,47 @@
+---
+globs: *.tsx
+description: Reglas para componentes React Native y estilos
+---
+
+# Componentes React Native
+
+## Estilos
+
+- **NativeWind**: Usar Tailwind CSS classes via NativeWind cuando sea posible
+- **GluestackUI**: Usar componentes de `@/components/ui/` para UI consistente
+- **StyleSheet**: Usar para estilos dinámicos o complejos
+- Evitar estilos inline excepto para casos muy simples
+
+## Componentes
+
+- Usar componentes funcionales con hooks
+- Separar lógica compleja en custom hooks
+- Componentes pequeños y enfocados en una sola responsabilidad
+
+## Imports Comunes
+
+```typescript
+import { View, Text, StyleSheet } from "react-native";
+import { useRouter, Link, Stack } from "expo-router";
+```
+
+## Estructura de Componente
+
+```typescript
+interface Props {
+  // props
+}
+
+export default function ComponentName({ prop }: Props) {
+  // hooks
+  // handlers
+  // render
+}
+```
+
+## Expo APIs
+
+- `expo-router` para navegación
+- `expo-haptics` para feedback táctil
+- `expo-image` para imágenes optimizadas
+- `@expo/vector-icons` para iconos

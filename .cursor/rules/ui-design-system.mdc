@@ -1,0 +1,50 @@
+---
+globs: *.tsx
+description: Sistema de diseño y componentes UI con GluestackUI y Tailwind
+---
+
+# Sistema de Diseño
+
+## GluestackUI
+
+- Componentes UI en `components/ui/`
+- Usar `<GluestackUIProvider>` en el layout raíz
+- Acceso a `OverlayProvider` y `ToastProvider`
+
+## Colores Tailwind
+
+El proyecto usa un sistema de colores personalizado con paletas semánticas:
+
+### Colores Principales
+
+- `primary-{0-950}`: Color primario de la app
+- `secondary-{0-950}`: Color secundario
+- `tertiary-{50-950}`: Color terciario
+
+### Colores de Estado
+
+- `error-{0-950}`: Errores y alertas
+- `success-{0-950}`: Éxito y confirmaciones
+- `warning-{0-950}`: Advertencias
+- `info-{0-950}`: Información
+
+### Colores de UI
+
+- `typography-{0-950}`: Textos (incluye white, gray, black)
+- `outline-{0-950}`: Bordes y líneas
+- `background-{0-950}`: Fondos (incluye error, warning, muted, success, info, light, dark)
+- `indicator-{primary|info|error}`: Indicadores
+
+## Dark Mode
+
+- Configurado con `class` strategy
+- Gestión via `useColorScheme` de NativeWind
+- GluestackUIProvider maneja el tema automáticamente
+
+## Imports de Componentes UI
+
+```typescript
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+```

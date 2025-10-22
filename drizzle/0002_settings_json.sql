@@ -1,0 +1,2 @@
+-- No hay cambios en el schema de settings
+-- La tabla ya tiene la estructura correcta (name, value, type)
