@@ -1,6 +1,7 @@
 // 🧠 Seed de los 44 fonemas del inglés según Reading Rockets
 // Basado en: https://www.readingrockets.org/sites/default/files/migrated/the-44-phonemes-of-english.pdf
 
+import { DATABASE_NAME } from "@/app/_layout";
 import { graphemePhonemes, graphemes, phonemes } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/expo-sqlite";
@@ -376,7 +377,7 @@ const ENGLISH_PHONEMES = [
 ];
 
 export async function seedPhonemes() {
-  const expoDb = openDatabaseSync("spellit");
+  const expoDb = openDatabaseSync(DATABASE_NAME);
   const db = drizzle(expoDb);
 
   try {

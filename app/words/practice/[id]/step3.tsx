@@ -80,12 +80,14 @@ export default function WordPracticeStep3Screen() {
   };
 
   const checkWord = () => {
+    if (!word) return;
+
     const placedWord = placedLetters
       .filter((letter) => letter !== null)
       .map((letter) => letter!.letter)
       .join("");
 
-    if (placedWord.toLowerCase() === word!.word.toLowerCase()) {
+    if (placedWord.toLowerCase() === word.word.toLowerCase()) {
       Alert.alert("¡Correcto!", "¡Has formado la palabra correctamente!", [
         {
           text: "Continuar",
@@ -109,7 +111,9 @@ export default function WordPracticeStep3Screen() {
   };
 
   const resetActivity = () => {
-    const letters = word!.graphemes.map((grapheme, index) => ({
+    if (!word) return;
+
+    const letters = word.graphemes.map((grapheme, index) => ({
       id: `letter-${index}`,
       letter: grapheme.letters,
       color: grapheme.color,
@@ -117,7 +121,7 @@ export default function WordPracticeStep3Screen() {
       isPlaced: false,
     }));
     setDraggedLetters(letters);
-    setPlacedLetters(new Array(word!.graphemes.length).fill(null));
+    setPlacedLetters(new Array(word.graphemes.length).fill(null));
   };
 
   const handlePrevious = () => {

@@ -2,11 +2,15 @@ import { useSettings } from "@/features/settings/hooks/useSettings";
 import { capitalize } from "@/features/shared/utils/capitalize";
 import { useWords } from "@/features/words/hooks/useWords";
 import { Button, Card, Icon, Layout, Text } from "@ui-kitten/components";
+import { useDrizzleStudio } from "expo-drizzle-studio-plugin";
 import { useRouter } from "expo-router";
+import { useSQLiteContext } from "expo-sqlite";
 import { FlatList, View } from "react-native";
 
 export default function HomeScreen() {
   const router = useRouter();
+  const expo = useSQLiteContext();
+  useDrizzleStudio(expo);
   const { wordsData } = useWords();
   const { childName } = useSettings();
 

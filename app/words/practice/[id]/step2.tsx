@@ -19,7 +19,7 @@ export default function WordPracticeStep2Screen() {
   const handlePlayGrapheme = async (grapheme: Grapheme) => {
     setPlayingGrapheme(grapheme.id);
     try {
-      await speak(grapheme.phonemeSymbol);
+      await speak(grapheme.letters);
     } catch (error) {
       console.error("Error al reproducir sonido:", error);
     } finally {
@@ -33,7 +33,7 @@ export default function WordPracticeStep2Screen() {
     setIsPlayingAll(true);
     try {
       for (const grapheme of word.graphemes) {
-        await speak(grapheme.phonemeSymbol);
+        await speak(grapheme.letters);
         await new Promise((resolve) => setTimeout(resolve, 500));
       }
     } catch (error) {
